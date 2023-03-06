@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript example</title>
+</head>
+
+<body>
+	<div>
+		<p id="gfg">
+		Welcome to geeks for geeks
+	</p>
+	</div>
+	<button type="button"
+			id="setstyle"
+			onclick="setstyle()">
+	Set Style
+</button>
+	<button type="button"
+			id="removestyle"
+			onclick="removestyle()"
+			disabled>
+	Remove Style
+</button>
+
+</body>
+
+<script type="text/javascript">
+	removestyle = () => {
+		document.getElementById(
+		"gfg").removeAttribute("style");
+		
+		document.getElementById(
+		"setstyle").removeAttribute("disabled");
+		
+		document.getElementById(
+		"removestyle").setAttribute("disabled", "true");
+	};
+</script>
+
+</html>

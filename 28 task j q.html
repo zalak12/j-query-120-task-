@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>
+		How to disable HTML links
+		using JavaScript
+	</title>
+
+	<style>
+		a.disabled {
+			pointer-events: none;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1 style="color:green;">
+     cakes
+	</h1>
+
+	<a href="https://www.google.com/search?q=cake+video&tbm=isch&ved=2ahUKEwjqzY2x7779AhVpNLcAHZrmAuAQ2-cCegQIABAA&oq=cake+v&gs_lcp=CgNpbWcQARgFMgUIABCABDIICAAQgAQQsQMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoHCAAQsQMQQzoECAAQQ1DfAVjrDWCuH2gAcAB4AIABbogBtAKSAQMxLjKYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=c3ABZKrIMuno3LUPms2LgA4&bih=657&biw=1366&rlz=1C1CHBF_enIN1016IN1016" id="GFG_UP">
+		LINK
+	</a>
+
+	<br><br>
+
+	<button onclick="gfg_Run()">
+		disable
+	</button>
+
+	<p id="GFG_DOWN" style="color:blueviolet;
+		font-size: 20px; font-weight: bold;">
+	</p>
+
+	<script>
+		var link = document.getElementById('GFG_UP');
+		var down = document.getElementById('GFG_DOWN');
+		
+		function gfg_Run() {
+		link.setAttribute("class", "disabled");
+		link.setAttribute("style", "color: black;");
+		down.innerHTML = "Link disabled";
+		}		
+	</script>
+</body>
+
+</html>

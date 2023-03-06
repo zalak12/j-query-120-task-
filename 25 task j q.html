@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>jQuery Setting background-image CSS Property</title>
+<style>
+    .box{
+        width: 500px;
+        height: 300px;
+        border: 5px solid #333;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        var imageUrl = "https://cdn.shopify.com/s/files/1/0521/3929/4884/products/RedVelvetCake1_400x400.jpg?v=1632143747";
+        $(".box").css("background-image", "url(" + imageUrl + ")");
+    });    
+});
+</script>
+</head>
+<body>
+    <div class="box"></div>
+    <p><button type="button">Set Background Image</button></p>
+</body>
+</html>

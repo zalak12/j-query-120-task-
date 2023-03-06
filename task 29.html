@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+
+<head>
+	<meta charset='utf-8'>
+	<title>JQuery Examples</title>
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	<style>
+		.gfg_class {
+			color:blueviolet;
+		}
+	</style>
+	<script>
+		$(() => {
+
+			// Updating the .gfg_class font
+			$("#button1").click(function () {
+				$(".gfg_class").css("font-size", "24pt");
+			});
+
+			// Adding border property to the span selector
+			$("#button2").click(function () {
+				$("span").css("border", "1px solid green");
+			});
+
+			// Setting background color attribute in class (#gfg_id)
+			$("#button3").click(function () {
+				$("#gfg_id").css("background", "blue");
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<input type="button"
+		id="button1"
+		value='button1' />
+		Updating the .gfg_class font<br>
+
+	<input type="button"
+		id="button2"
+		value='button2' />
+		Adding border property to the span selector<br>
+
+	<input type="button"
+		id="button3"
+		value='button3' />
+		Setting background color attribute in class (#gfg_id)
+	<br><br><br>
+
+	<span class='gfg_class'>
+	Hello students
+	</span>
+
+	<br>
+	<span>is</span><br>
+	<span id='gfg_id'>Great</span>
+	<br>
+
+	<span class='gfg_class'>
+	Hey,you are great..
+	</span>
+	<br>
+</body>
+
+</html>
